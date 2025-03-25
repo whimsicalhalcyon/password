@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <link rel="stylesheet" href="receive.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="section-main" id="main">
+        <div class="container">
+            <div class="container-title">
+                <p class="p-title">Сгенерируй надежный пароль</p>
+            </div>
+            <div class="container-data">
+                <div class="password-line" 
+                :class = "['password-line', 
+                {'password-red' : passwordValue.length < 4}, 
+                {'password-orange' : passwordValue.length >= 4}, 
+                {'password-yellow' : passwordValue.length >= 8},  
+                {'password-green' : passwordValue.length >= 10},  
+                {'password-done' : passwordValue.length >= 12}, ]"
+                ></div>
+                <input type="text" class="input-password" v-model="passwordValue" @keydown.enter = "consoleLod">
+                
+            </div>
+            <div class="container-message">
+                <p class="result">
+                    {{result}}
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Onest:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap');
+
+body {
+    font-family: 'Manrope';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-data {
+    margin-top: 15vh;
+}
+
+.p-title {
+    font-size: 3vw; 
+    text-align: center; 
+    font-weight: 800;
+    color: #0487D9;
+}
+
+input {
+    border: 2px #0487D9 solid;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    padding: 2vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.password-line {
+    border-radius: 10px;
+    width: 100%;
+    height: 2vh;
+    background-color: rgb(230, 230, 230);
+    transition: width 0.3s ease, background-color 0.3s ease
+}
+
+.password-red {
+    width: 20%;
+    background-color: #D95204;
+}
+.password-orange {
+    width: 40%;
+    background-color: #F2B705;
+}
+.password-yellow {
+    width: 60%;
+    background-color: #F2E205;
+}
+.password-green {
+    width: 80%;
+    background-color: #618C03;
+}
+.password-done {
+    width: 100%;
+    background-color: #0B9ED9;
+}
+
+.container-message {
+    background-color: #0487D9;
+    color: white;
+    margin-top: 10vh;
+    height: 20vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 1.2rem;
+}
+
